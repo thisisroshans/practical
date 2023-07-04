@@ -22,7 +22,7 @@ class LaunchesPage extends StatelessWidget
           title: const Text("Launches"),
 
         ),
-        body: BlocBuilder<LaunchesBloc,LaunchesState>(
+      body: BlocBuilder<LaunchesBloc,LaunchesState>(
           builder: (context,state){
             if (state is LaunchesInitial)
             {
@@ -46,7 +46,7 @@ class LaunchesPage extends StatelessWidget
             }
             return Container();
           },
-        ),
+        )
       ),
     );
   }
